@@ -1,0 +1,286 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.landing-page-slider {
+  margin-top: 8vh;
+  height: 23rem;
+  display: flex;
+  justify-content: space-between;
+  padding-inline: 2rem;
+  background-color: #e1e1e1;
+}
+
+.image-slider {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  padding: 0.5rem;
+}
+
+.image-slider .slide {
+  z-index: 0;
+}
+
+.image-slider .slide.active {
+  width: fit-content;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 0.8rem;
+  box-shadow: 0px 0px 25px -5px rgba(0, 0, 0, 0.75);
+}
+
+.image-slider .slide.active img {
+  height: 21rem;
+}
+
+.image-slider img {
+  max-width: 100%;
+  height: 20rem;
+  object-fit: cover;
+  border-radius: 0.8rem;
+}
+
+.main-content {
+  min-height: 45rem;
+  max-width: 100%;
+  position: relative;
+  background-image: url("background/bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.main-content .about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 1rem;
+}
+
+.main-content .about-section .heading {
+  text-align: center;
+  font-weight: 500;
+  color: #000000;
+}
+
+.main-content .about-section .heading span:nth-child(1) {
+  color: #58b7f1;
+  font-weight: 700;
+}
+.main-content .about-section .heading span:nth-child(2) {
+  font-weight: 700;
+}
+.main-content .about-section .heading span:nth-child(3) {
+  font-size: 80%;
+}
+
+.main-content .about-section .line-1 {
+  position: relative;
+  margin: auto;
+  width: 55%;
+  height: 4px;
+  background-color: #58b7f1;
+  margin-top: 10px;
+}
+
+.main-content .about-section .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 70%;
+  margin-top: 2rem;
+}
+
+.main-content .about-section button {
+  color: #58b7f1;
+  background-color: #ffffff;
+  border: 2px solid #58b7f1;
+  border-radius: 20px;
+  margin-top: 1rem;
+  width: 180px;
+  height: 35px;
+  transition: all 0.2s ease;
+}
+
+.main-content .about-section button:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #58b7f1;
+}
+
+.main-content .catalog-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.main-content .catalog-section h2 {
+  color: #58b7f1;
+}
+
+.main-content .catalog-section .line-2 {
+  position: relative;
+  margin: auto;
+  width: 78px;
+  height: 4px;
+  background-color: #58b7f1;
+  margin-top: 10px;
+}
+
+.main-content .catalog-section p {
+  text-align: center;
+  width: 45%;
+  margin-top: 1rem;
+}
+
+.main-content .catalog-section .cards {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-top: 3rem;
+}
+
+.main-content .catalog-section .cards .card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 251px;
+  height: 346px;
+  background: linear-gradient(
+    153.82deg,
+    #ffffff -21.19%,
+    rgba(208, 208, 208, 0) 111.31%
+  );
+  filter: drop-shadow(1px 10px 5px rgba(0, 0, 0, 0.25));
+  border-radius: 13px;
+}
+
+.main-content .catalog-section .cards .card img {
+  margin-top: 2rem;
+  max-width: 100%;
+  height: 170px;
+  object-fit: contain;
+}
+
+.main-content .catalog-section .cards .card p {
+  font-weight: 700;
+  margin-top: 35px;
+  font-weight: 700;
+}
+
+.main-content .catalog-section .cards .card .fitur {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 90%;
+  margin-top: 1rem;
+  padding: 0 5px;
+}
+
+.main-content .catalog-section .cards .card .fitur img {
+  margin-top: 0;
+  height: 15px;
+}
+.main-content .catalog-section .cards .card .fitur p {
+  text-align: center;
+  margin-top: 0;
+  font-size: 10px;
+  font-weight: 400;
+}
+
+.main-content .catalog-section .cards .card .fitur p.passanger {
+  width: 100%;
+}
+
+.main-content .catalog-section .cards .card .harga {
+  margin-top: 1rem;
+  font-size: 15px;
+  width: 100%;
+}
+
+.line-price {
+  background-color: #58b7f1;
+  width: 70px;
+  height: 3px;
+  margin-top: 5px;
+}
+
+.main-content .catalog-section button {
+  color: #58b7f1;
+  background-color: #ffffff;
+  border: 2px solid #58b7f1;
+  border-radius: 20px;
+  width: 180px;
+  height: 35px;
+  transition: all 0.2s ease;
+  margin-top: 2rem;
+}
+
+.main-content .catalog-section button:hover {
+  cursor: pointer;
+  color: #ffffff;
+  background-color: #58b7f1;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  .cards {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .main-content .about-section .main {
+    width: 95%;
+  }
+  .main-content .catalog-section p {
+    width: 95%;
+  }
+  .main-content {
+    background: #ffffff;
+  }
+  .image-slider .slide.active img {
+    height: 15rem;
+  }
+  .image-slider img {
+    max-width: 100%;
+    height: 14rem;
+    object-fit: cover;
+    border-radius: 0.8rem;
+  }
+  .landing-page-slider {
+    margin-top: 11vh;
+    height: 17rem;
+    display: flex;
+    justify-content: space-between;
+    padding-inline: 2rem;
+    background-color: #e1e1e1;
+  }
+}

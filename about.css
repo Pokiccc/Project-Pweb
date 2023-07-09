@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Monoton&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+.container-about {
+  width: 100%;
+  min-height: 83vh;
+  position: relative;
+  background-image: url("background/bg.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.container-about .about-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 11vh;
+  padding-top: 1rem;
+}
+
+.about-section .heading {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 500;
+  color: #000000;
+}
+
+.about-section .heading span:nth-child(1) {
+  color: #58b7f1;
+  font-weight: 700;
+}
+.about-section .heading span:nth-child(2) {
+  font-weight: 700;
+}
+.about-section .heading span:nth-child(3) {
+  font-size: 80%;
+}
+
+.about-section .line-1 {
+  position: relative;
+  margin: auto;
+  width: 65%;
+  height: 4px;
+  background-color: #58b7f1;
+  margin-top: 1rem;
+}
+
+.about-section .main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  width: 80%;
+  margin-top: 2rem;
+}
+
+.why {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.why .alasan-container, .contact-container .contact {
+  margin-top: 3rem;
+  width: 80%;
+  font-size: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-align: center;
+}
+
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.contact-container .contact img {
+  height: 2.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  body {
+    width: 100%;
+  }
+  .container-about {
+    background: #ffffff;
+    min-height: 84vh;
+  }
+  p {
+    font-size: 0.7rem;
+  }
+  .contact-container .contact img {
+    height: 2rem;
+  }
+  .socmed h4 {
+    font-size: 0.8rem;
+  }
+}

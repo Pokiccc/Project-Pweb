@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>24 Wheelz</title>
+    <link rel="stylesheet" href="./style/style.css" />
+    <link rel="stylesheet" href="./style/navbar.css" />
+    <link rel="stylesheet" href="./style/footer.css" />
+    <link rel="shortcut icon" href="src\icon\favicon.png" type="image/x-icon" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <label class="menu-btn" for="menu-toggle">
+        <hr />
+        <hr />
+        <hr />
+      </label>
+      <input type="checkbox" id="menu-togle" />
+      <div class="navbar-logo"><span>24</span>Wheelz</div>
+      <div class="navbar-text">
+        <a class="active" href="index.html">HOME</a>
+        <a href="about.html">TENTANG KAMI</a>
+        <a href="katalog.html">KATALOG</a>
+        <a href="wisata.html">DESTINASI WISATA</a>
+        <button class="order" onclick="redirectToPage('orderform.html')">
+          Order
+        </button>
+      </div>
+    </nav>
+
+    <div class="landing-page-slider">
+      <div class="image-slider">
+        <div class="slide">
+          <img src="src/Images/1.webp" alt="landing-page-top" />
+        </div>
+
+        <div class="slide active">
+          <img src="src/Images/2.webp" alt="landing-page-top" />
+        </div>
+
+        <div class="slide">
+          <img src="src/Images/3.webp" alt="landing-page-top" />
+        </div>
+      </div>
+    </div>
+
+    <main class="main-content">
+      <div class="background"></div>
+      <div class="about-section">
+        <h1 class="heading">
+          <span>24</span><span>Wheelz</span>
+          <span>siap membantu anda</span>
+        </h1>
+        <hr class="line-1" />
+        <div class="main">
+          <p>
+            <strong>24wheelz</strong> adalah usaha rental mobil dan motor yang
+            menyediakan kendaraan berkualitas, mudah dipesan secara online,
+            dengan komitmen memberikan pelayanan terbaik.
+          </p>
+        </div>
+        <button onclick="redirectToPage('about.html')">Selengkapnya...</button>
+      </div>
+      <div class="catalog-section">
+        <h2>Motor & Mobil</h2>
+        <h1>Yang Kami Sediakan</h1>
+        <hr class="line-2" />
+        <p>
+          Untuk memenuhi kebutuhan Perjalanan anda, kami menyediakan
+          Transportasi yang nyaman dengan pelayanan sopir yang ramah.
+        </p>
+        <div class="cards">
+          <div class="card">
+            <img src="src/Images/car1.svg" alt="car1" />
+            <p class="nama">Avanza</p>
+            <div class="fitur">
+              <img src="src/icon/driver.svg" alt="driver" />
+              <p class="driverIcon">Driver</p>
+              <img src="src/icon/carbbm.svg" alt="bbm" />
+              <p class="bbmIcon">BBM</p>
+              <img src="src/icon/passanger.svg" alt="passanger" />
+              <p class="passanger">7 Penumpang</p>
+            </div>
+            <p class="harga">Rp. 300.000 / Hari</p>
+            <hr class="line-price" />
+          </div>
+          <div class="card">
+            <img src="src/Mobil/Jazz.png" alt="car2" />
+            <p>Honda Jazz</p>
+            <div class="fitur">
+              <img src="src/icon/driver.svg" alt="driver" />
+              <p class="driverIcon">Driver</p>
+              <img src="src/icon/carbbm.svg" alt="bbm" />
+              <p class="bbmIcon">BBM</p>
+              <img src="src/icon/passanger.svg" alt="passanger" />
+              <p class="passanger">4 Penumpang</p>
+            </div>
+            <p class="harga">Rp. 250.000 / Hari</p>
+            <hr class="line-price" />
+          </div>
+          <div class="card">
+            <img src="src/Images/motor1.svg" alt="motor1" />
+            <p>Vespa Matic</p>
+            <div class="fitur">
+              <img src="src/icon/helm.svg" alt="driver" />
+              <p class="driverIcon">Helmet</p>
+              <img src="src/icon/motorbbm.svg" alt="bbm" />
+              <p class="bbmIcon">BBM</p>
+              <img src="src/icon/passanger.svg" alt="passanger" />
+              <p class="passanger">1 Penumpang</p>
+            </div>
+            <p class="harga">Rp. 250.000 / Hari</p>
+            <hr class="line-price" />
+          </div>
+          <div class="card">
+            <img src="src/Images/motor2.svg" alt="motor2" />
+            <p>XMAX</p>
+            <div class="fitur">
+              <img src="src/icon/helm.svg" alt="driver" />
+              <p class="driverIcon">Helmet</p>
+              <img class="bbmmotor" src="src/icon/motorbbm.svg" alt="bbm" />
+              <p class="bbmIcon">BBM</p>
+              <img src="src/icon/passanger.svg" alt="passanger" />
+              <p class="passanger">1 Penumpang</p>
+            </div>
+            <p class="harga">Rp. 250.000 / Hari</p>
+            <hr class="line-price" />
+          </div>
+        </div>
+        <button onclick="redirectToPage('katalog.html')">
+          Selengkapnya...
+        </button>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <p>
+        ©2023 <span>24Wheelz.com</span> - Rental Mobil & Motor Yogyakarta. All
+        rights reserved
+      </p>
+    </footer>
+
+    <script src="./script/index.js"></script>
+  </body>
+</html>
