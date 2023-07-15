@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login and Registration</title>
+    <link rel="stylesheet" href="css/StyleLogin.css" />
+  </head>
+  <body>
+    <div class="hero">
+      <div class="form-box">
+        <div class="button-box">
+          <div id="btn"></div>
+          <button type="button" class="toogle-btn" onclick="login()">
+            Masuk
+          </button>
+          <button type="button" class="toogle-btn" onclick="register()">
+            Daftar
+          </button>
+        </div>
+        <div class="title">
+          <h2>BankSampah</h2>
+        </div>
+        <form id="login" class="input-group" action="database/login.php" method="POST">
+          <input name="email" type="email" class="input-field" placeholder="Email" required/>
+          <input name="password" type="password" class="input-field" placeholder="Masukan Password" required/>
+          <input type="checkbox" class="check-box" />
+          <span>Remember Password</span>
+          <button type="submit" class="submit-btn">Log in</button>
+        </form>
+        <form id="register" class="input-group" action="database/register.php" method="POST">
+          <input name="nama" type="text" class="input-field" placeholder="Nama Pengguna" required/>
+          <input name="email" type="email" class="input-field" placeholder="Masukan Email" required/>
+          <input name="password" type="password" class="input-field" placeholder="Masukan Password" required/>
+          <input type="checkbox" class="check-box" />
+          <span>I agree to the terms & conditions</span>
+          <button type="submit" class="submit-btn">Register</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/script-login.js"></script>
+  </body>
+
+</html>
